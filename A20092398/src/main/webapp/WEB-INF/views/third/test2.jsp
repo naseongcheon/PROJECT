@@ -21,23 +21,23 @@ background-color: #ffa; border: 1px solid #cc0; }
 <body>
 <div class="container">
 <form method="post">
-<div class="title">student 정보</div>
+<div class="title">학생 정보</div>
 <table>
 <tr>
-<td>name</td>
-<td><input type="text" name="name" value="${ student.studentName }"/></td>
+<td>Name</td>
+<td><input type="text" name="studentName" value="${ student.studentName }"/></td>
 </tr>
 <tr>
-<td>number</td>
-<td><input type="number" name="number" value="${ student.studentNumber }" step="1"/></td>
+<td>ID</td>
+<td><input type="text" name="studentNumber" value="${ student.studentNumber }"/></td>
 </tr>
 <tr>
-<td>email</td>
+<td>E-mail</td>
 <td><input type="text" name="email" value="${ student.email }"/></td>
 </tr>
 <tr>
-<td>id</td>
-<td><input type="text" name="id" value="${ student.id }"/></td>
+<td>Number</td>
+<td><input type="number" name="id" value="${ student.id }"/></td>
 </tr>
 </table>
 <button type="submit">저장</button>
