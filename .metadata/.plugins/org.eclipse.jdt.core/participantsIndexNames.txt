@@ -17,6 +17,8 @@ C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\455067092.
 \hwA20092399\src\main\java
 C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2387250991.index
 \param\src\main\java
+C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2446811904.index
+\mybatis1\src\main\java
 C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1564136325.index
 \mybatis1\src\main\java
 C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2027258913.index
