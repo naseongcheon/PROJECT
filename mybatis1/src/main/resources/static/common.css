@@ -16,3 +16,5 @@ table.list th{padding:4px; border:1px solid gray;  background-color: #eee; }
 
 input{padding:4px; }
 select{padding:4px; }
+
+tr[data-url]:hover{cursor:pointer; background-color:#ffe; }
