@@ -25,5 +25,13 @@ C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1564136325
 \mybatis1\src\main\java
 C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2027258913.index
 \hello1\src\main\java
+C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3416720219.index
+\resultmap3\src\main\java
 C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4253900312.index
 \hello2\src\main\java
+C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\408507041.index
+\resultmap1\src\main\java
+C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3453940322.index
+\resultmap1\src\main\java
+C:\PROJECT\sts4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3881976554.index
+\resultmap2\src\main\java

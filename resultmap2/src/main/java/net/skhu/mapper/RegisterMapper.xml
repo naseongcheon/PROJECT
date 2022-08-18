@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.skhu.mapper.RegisterMapper">
+
+<resultMap id="RegisterWithStudentAndCourse" type="net.skhu.dto.Register">
+<id property="id" column="id"/>
+<result property="studentId" column="studentId"/>
+<result property="courseId" column="courseId"/>
+<result property="grade" column="grade"/>
+<result property="createDate" column="createDate"/>
+<association property="student" javaType="net.skhu.dto.Student">
+<id property="id" column="studentId"/>
+<result property="studentNumber" column="studentNumber"/>
+<result property="name" column="studentName"/>
+</association>
+<association property="course" javaType="net.skhu.dto.Course">
+<id property="id" column="courseId"/>
+<result property="courseName" column="courseName"/>
+<result property="unit" column="unit"/>
+</association>
+</resultMap>
+
+</mapper>
