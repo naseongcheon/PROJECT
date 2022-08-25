@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.skhu.mapper.ProfessorMapper">
+
+<select id="findAll" resultMap="professorWithCourses">
+    select p.*, 
+      c.id courseId, c.courseName, c.departmentId courseDepartmentId,
+      c.unit, c.startDate
+    from professor p join course c 
+      on p.id = c.professorId
+    order by p.id
+</select>
+
+<resultMap id="professorWithCourses" type="net.skhu.dto.Professor">
+<id property="id" column="id"/>
+<result property="professorName" column="professorName"/>
+<result property="departmentId" column="departmentId"/>
+<collection property="courses" ofType="net.skhu.dto.Course">
+<id property="id" column="courseId"/>
+<result property="courseName" column="courseName"/>
+<result property="departmentId" column="courseDepartmentId"/>
+<result property="unit" column="unit"/>
+<result property="startDate" column="startDate"/>
+</collection>
+</resultMap>
+
+</mapper>

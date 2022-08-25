@@ -4,22 +4,27 @@ import java.util.Scanner;
 
 public class Codetest {
 
-	public String solution(String str, String str2) {
+	public int[] solution(String str, char str2) {
+		int[] answer = new int [str.length()];
+		int p =1000;
 
-		StringBuffer sb = new StringBuffer();
-		String answer = "";
+		for(int i =0; i < str.length();i++) {
+			if(str.charAt(i) == str2)
+				p=0;
+			else
+				p++;
 
-		for ( int i = 0; i < str.length(); i ++) {
-			int pos1 = 0;
-			int pos2 = str.indexOf(str.charAt(i));
-			int min = 0;
-			int prepos =0;
-			while ( pos1 < 0 ) {
-				min = Math.min(pos2 - pos1, prepos);
-				pos1 = str.indexOf(str2, pos1);
-				prepos = pos1;
-			}
-			answer += String.valueOf(min);
+			answer[i] = p;
+		}
+
+		p =1000;
+		for(int i = str.length()-1; i >= 0; i--) {
+			if(str.charAt(i) == str2)
+				p=0;
+			else
+				p++;
+
+			answer[i] = Math.min(answer[i], p);
 		}
 
 		return answer;
@@ -30,10 +35,13 @@ public class Codetest {
 
 		Codetest T = new Codetest();
 		Scanner in = new Scanner(System.in);
-	    String input1 = in.next();
-	    String input2 = in.next();
+	    String input1 = in.nextLine();
+	    char input2 = in.next().charAt(0);
 
-	    System.out.println(T.solution(input1, input2));
+	    for(int i : T.solution(input1, input2)) {
+	    	System.out.print(i + " ");
+	    }
+	    //System.out.println(T.solution(input1, input2));
 	}
 
 

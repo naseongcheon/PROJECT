@@ -10,7 +10,7 @@ import net.skhu.dto.Course;
 @Mapper
 public interface CourseMapper {
 
-	@Select("SELECT * FROM course WHERE professorld = #{professorld}")
-	List<Course> findByProfessorld(int professorld);
+	@Select("SELECT * FROM course WHERE professorId = #{professorId}")
+	List<Course> findByProfessorld(int professorId);
 
 }
